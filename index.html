@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>Symptoms Checker</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-light" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="wrapper">
+      <main>
+        <section class="section parallax bg1">
+          <div class="text-center">
+            <img src="../images/logo.png" alt="">
+            <h1>NetMeds</h1>
+          </div>
+        </section>
+      </main>
+
+      <div class="container">
+        <h1 class="heading">Ear, Nose, Throat Problems</h1>
+        <hr />
+        <div class="oneRow">
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/Flu-Cold.png" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Cold and Flu</h5>
+              <hr />
+              <p class="card-text">
+                The common cold, including chest cold and head cold, and
+                seasonal flu are caused by viruses.
+              </p>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#coldm"
+              >
+                details
+              </button>
+            </div>
+          </div>
+
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/fever.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Fever</h5>
+              <hr />
+              <p class="card-text">
+                A fever is a higher-than-normal body temperature, one of the body's natural responses to infection. A low-grade fever isn't usually a cause for concern, but a temperature 102°F and above should be treated.
+              </p>
+              <a href="#" class="btn btn-primary"> Details </a>
+            </div>
+          </div>
+
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/cough.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Dry cough</h5>
+              <hr />
+              <p class="card-text">
+                A cough is body's way of responding when something irritates your throat. An irritant stimulates nerves that send a message to your brain which tells muscles in your chest to push air out of your lungs.
+              </p>
+              <a href="#" class="btn btn-primary"> Details </a>
+            </div>
+          </div>
+
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/ear.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Ear pain</h5>
+              <hr />
+              <p class="card-text">
+                Otalgia (ear pain) is a common presentation in the primary care setting with many diverse causes. Pain that originates from the ear is called primary otalgia, and the most common causes are otitis media and otitis externa.
+              </p>
+              <a href="#" class="btn btn-primary"> Details </a>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="heading">Cardiac problems and Back pain</h1>
+        <hr />
+        <div class="oneRow">
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/chestpain.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Chest Discomfort</h5>
+              <hr />
+              <p class="card-text">
+                Pressure, fullness, burning or tightness in your chest. Crushing or searing pain that radiates to your back, neck, jaw, shoulders, and one or both arms.
+              </p>
+              <a href="#" class="btn btn-primary"> Details </a>
+            </div>
+          </div>
+
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/heart.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Irregular Heart Beat</h5>
+              <hr />
+              <p class="card-text">
+                An arrhythmia is an uneven heartbeat. It means your heart is out of its usual rhythm. It may feel like your heart skipped a beat, added a beat, or is "fluttering."
+              </p>
+              <a href="#" class="btn btn-primary"> Details </a>
+            </div>
+          </div>
+
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/back1.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Back Pain</h5>
+              <hr />
+              <p class="card-text">
+                Conditions commonly linked to back pain include: Muscle or ligament strain. Repeated heavy lifting or a sudden awkward movement can strain back muscles and spinal ligaments.
+              </p>
+              <a href="#" class="btn btn-primary"> Details </a>
+            </div>
+          </div>
+
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/breath.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Breath Shortness</h5>
+              <hr />
+              <p class="card-text">
+                Shortness of breath — known medically as dyspnea — is often described as an intense tightening in the chest, air hunger, difficulty breathing, breathlessness or a feeling of suffocation.
+              </p>
+              <a href="#" class="btn btn-primary"> Details </a>
+            </div>
+          </div>
+        </div>
+
+        <h1 class="heading">Joint pain and other issues</h1>
+        <hr />
+        <div class="oneRow">
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/wrist.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">ankle and wrist pain</h5>
+              <hr />
+              <p class="card-text">
+                The excess uric acid can be deposited in the joints, resulting in pain and swelling. This pain frequently occurs in the knees, ankles, wrists, and feet.
+              </p>
+              <a href="#" class="btn btn-primary"> Details </a>
+            </div>
+          </div>
+
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/knee.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Knee pain</h5>
+              <hr />
+              <p class="card-text">
+                Knee pain can be caused by a sudden injury, an overuse injury, or by an underlying condition, such as arthritis. Treatment will vary depending on the cause.
+              </p>
+              <a href="#" class="btn btn-primary"> Details </a>
+            </div>
+          </div>
+
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/pimples.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Pimples</h5>
+              <hr />
+              <p class="card-text">
+                A pimple is a small pustule or papule. Pimples develop when sebaceous glands, or oil glands, become clogged and infected, leading to swollen, red lesions filled with pus.
+
+              </p>
+              <a href="#" class="btn btn-primary"> Details </a>
+            </div>
+          </div>
+
+          <div class="card text-center my-5" style="width: 18rem">
+            <img src="../images/headache.jpg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Headache</h5>
+              <hr />
+              <p class="card-text">
+                Headaches are a very common condition that most people will experience many times during their lives. The main symptom of a headache is a pain in your head or face. 
+              </p>
+              <a href="#" class="btn btn-primary"> Details </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ................................................content stats here.................................................... -->
+      <div class="container" id="content">
+        <div class="content">
+          <h1>How do I know if I’m sick?</h1>
+          <div class="text">
+            <p>
+              Using an online symptom checker is simple. For instance, you might be a 45 year old woman from the UK who is currently experiencing headache, a fever and a sore throat.
+            </p>
+            <p> 
+              Inputting this information into the symptom checker will give you some likely ‘common’ diagnoses. These include: strep throat, tonsillitis, sinusitis and flu.
+            </p>
+            <p>
+              But the self-diagnosis calculator will also give a list of rarer but more serious diagnoses in a tab called ‘red flags’. Here you’ll find links to our patient information leaflets about much less common conditions, such as temporal arteritis, meningitis and toxic shock syndrome. If, after reading the information, you think one of these serious conditions could apply to you, you should seek medical advice immediately.
+            </p>
+          </div>
+        </div>
+
+        <div class="content">
+          <h1>What’s the difference between a sign and a symptom?</h1>
+          <div class="text">
+            <p>
+              ‘Sign’ and ‘symptom’ are often used interchangeably, but if we’re going to be pedantic, they do actually mean different things.
+            </p>
+            <p> 
+              If you’re feeling ill it might not be immediately obvious to somebody looking at you that you’re sick. For instance, if you’re experiencing pain, fatigue or dizziness, only you know what that feels like. These are symptoms - which can only be described by the person experiencing them.
+            </p>
+            <p>
+              Signs, on the other hand, can be observed by an outsider too. For example, indicators to other people that you’re unwell, such as: sweating, sneezing or looking pale. Or, things that can be measured, such as a high blood pressure reading or a fever determined with a thermometer, count as signs.
+            </p>
+          </div>
+        </div>
+
+        <div class="content">
+          <h1>How safe and accurate are symptom checkers?</h1>
+          <div class="text">
+            <p>
+              Most doctors agree that online symptom checkers are can encourage people with life-threatening symptoms to seek urgent attention, potentially saving lives. They’re also useful for reassuring patients who may have sought urgent care when they didn’t need to.
+            </p>
+            <p> 
+              However, one study suggested that online symptom checkers tend to be over-cautious, which could lead to an increase in unnecessary appointments, rather than a reduction. Another piece of research from the United States found that doctors are twice as likely to make a correct diagnosis as online symptom checkers.
+            </p>
+            <p>
+              While these self diagnosis tools can certainly be useful for determining whether a trip to hospital is necessary, they can’t match the expertise of an experienced health professional.
+            </p>
+          </div>
+        </div>
+
+        <div class="content">
+          <h3>Disclaimer</h3>
+          <div class="text">
+            <p>
+              This symptom checker is provided by Isabel Healthcare Limited. Isabel Symptom Checker ("Isabel") and any content accessed through Isabel is for informational purposes only, and is not intended to constitute professional medical advice, diagnosis or treatment. EMIS shall be in no way responsible for your use of Isabel, or any information that you obtain from Isabel. You acknowledge that when using Isabel you do so at your own choice and in agreement with this disclaimer. Do not ignore or delay obtaining professional medical advice because of information accessed through Isabel. Seek immediate medical assistance or call your doctor for all medical emergencies. By using Isabel you agree to the terms and conditions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+        
+      <div class="footer d-flex justify-content-around">
+        <div class="logo">
+          hello
+        </div>
+        <div class="social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-google"></a>
+          <a href="#" class="fa fa-youtube"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="quick text-center">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">contact us</a></li>
+            <li><a href="#">about us</a></li>
+          </ul>
+        </div>
+      </div>
+     
+     
+    </div>
+
+     <!-- .........................................here comes the modals................................................ -->
+     
+    <div
+    id="coldm"
+    class="modal fade"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div
+      class="
+        modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg
+      "
+    >
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cold and Flu</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
+          quisquam voluptate tempora eaque nam sed harum at veritatis,
+          tempore mollitia nobis minus, quaerat molestias molestiae ullam,
+          nihil dicta dolor eveniet! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Aliquam accusamus rerum quaerat est
+          perspiciatis, amet et sunt omnis sapiente fugiat voluptates
+          dolorum corrupti qui nisi quas labore asperiores vitae ab? Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Sed
+          reprehenderit aliquid, delectus ab minima consequuntur distinctio
+          similique dicta assumenda unde itaque molestiae repudiandae
+          inventore odit expedita voluptatem autem. Ipsa, quos!
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn btn-danger"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
